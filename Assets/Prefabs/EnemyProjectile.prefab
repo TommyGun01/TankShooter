@@ -175,4 +175,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 0}
-  moveSpeed: 15
+  moveSpeed: 1

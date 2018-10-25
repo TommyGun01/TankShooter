@@ -20,4 +20,13 @@ public class EnemyProjectile : MonoBehaviour {
     {
         Projectile.velocity = new Vector2(0, -1) * moveSpeed;	
 	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.SetActive(false);
+        }
+    }
+
 }
