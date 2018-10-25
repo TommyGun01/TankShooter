@@ -20,3 +20,4 @@ public class MoveProjectile : MonoBehaviour {
         projectile.velocity = new Vector2(0, 1) * moveSpeed;	
 	}
 }
+//
