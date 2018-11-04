@@ -242,6 +242,7 @@ GameObject:
 --- !u!50 &980379299
 Rigidbody2D:
   serializedVersion: 4
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -337,6 +338,78 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+=======
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980379298}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!114 &980379300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980379298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03baccf182833504b9d6bd45efe2e5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  moveSpeed: 1
+  changeDirections: 0
+--- !u!4 &980379302 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519108966190266, guid: 6230dc564cbc79d45879d854b35df1a2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1805446576}
+--- !u!1 &1180250129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180250130}
+  - component: {fileID: 1180250131}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180250130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180250129}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: -0.007, y: 0.344, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 980379302}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180250131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+>>>>>>> 313e8d4d4e51ced0dba5b2c077e03d348d9508f8
   m_GameObject: {fileID: 1180250129}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -356,11 +429,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4519108966190266, guid: 6230dc564cbc79d45879d854b35df1a2, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -3.33
       objectReference: {fileID: 0}
     - target: {fileID: 4519108966190266, guid: 6230dc564cbc79d45879d854b35df1a2, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.53
+=======
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519108966190266, guid: 6230dc564cbc79d45879d854b35df1a2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.7
+>>>>>>> 313e8d4d4e51ced0dba5b2c077e03d348d9508f8
       objectReference: {fileID: 0}
     - target: {fileID: 4519108966190266, guid: 6230dc564cbc79d45879d854b35df1a2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -388,7 +469,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1292391335742054, guid: 6230dc564cbc79d45879d854b35df1a2, type: 2}
       propertyPath: m_Name
+<<<<<<< HEAD
       value: Enemy
+=======
+      value: tank_darkLarge
+>>>>>>> 313e8d4d4e51ced0dba5b2c077e03d348d9508f8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6230dc564cbc79d45879d854b35df1a2, type: 2}
@@ -498,13 +583,18 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034669030}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.01, y: -1.77, z: 0}
+=======
+  m_LocalPosition: {x: 0.7, y: -1.77, z: 0}
+>>>>>>> 313e8d4d4e51ced0dba5b2c077e03d348d9508f8
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 105126537}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+<<<<<<< HEAD
 --- !u!61 &2034669035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -530,3 +620,5 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42, y: 0.46}
   m_EdgeRadius: 0
+=======
+>>>>>>> 313e8d4d4e51ced0dba5b2c077e03d348d9508f8
