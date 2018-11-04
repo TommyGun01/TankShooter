@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    public int points;
     public float moveSpeed = 10.0f;
 
     public Rigidbody2D player;
