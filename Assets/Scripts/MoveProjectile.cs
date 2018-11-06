@@ -19,5 +19,15 @@ public class MoveProjectile : MonoBehaviour {
     {
         projectile.velocity = new Vector2(0, 1) * moveSpeed;	
 	}
+
+    //hit detection
+
+     void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Enemy")
+        {
+            collision.gameObject.SetActive(false);
+        }
+    }
 }
 //
