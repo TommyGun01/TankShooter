@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     //Points
@@ -20,5 +20,10 @@ public class GameController : MonoBehaviour
     void Update()
     {
         pointsText.text = points.ToString();
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene("Scene1");
+        Time.timeScale = 1;
     }
 }

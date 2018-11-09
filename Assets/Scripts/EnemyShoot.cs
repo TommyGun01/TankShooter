@@ -22,10 +22,10 @@ public class EnemyShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyShoot();
+        EnemyShooting();
     }
 
-    public void enemyShoot()
+    public void EnemyShooting()
     {
         currentTime += Time.deltaTime;
 

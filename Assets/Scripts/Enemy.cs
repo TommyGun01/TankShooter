@@ -8,16 +8,25 @@ public class Enemy : MonoBehaviour {
     public float moveSpeed = 15.0f;
     public bool changeDirections = false;
 
+    public int enemyHP;
+    public int enemydmg;
+
+    public Player playerScript;
+
+    public GameController gc;
 	// Use this for initialization
 	void Start ()
     {
         enemy = this.gameObject.GetComponent<Rigidbody2D> ();
-        
-	}
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        if (enemyHP<= 0)
+            Destroy(gameObject);
         MoveEnemy();
 	}
 
@@ -25,11 +34,11 @@ public class Enemy : MonoBehaviour {
     {
         if (changeDirections == true)
         {
-            enemy.velocity = new Vector2(1, 0) * -1 * moveSpeed;
+            enemy.velocity = new Vector2(0, -1) * -1 * moveSpeed;
         }
         else if (changeDirections == false)
         {
-            enemy.velocity = new Vector2(1, 0) * moveSpeed;
+            enemy.velocity = new Vector2(0, -1) * moveSpeed;
         }
 
     }
@@ -44,6 +53,17 @@ public class Enemy : MonoBehaviour {
         {
             Debug.Log("Hit the left wall");
             changeDirections = false;
+        }
+        if (col.gameObject.name == "Floor")
+        {
+            //playerScript.TakeDamage(enemydmg);
+            Destroy(gameObject);
+            //SendMessageUpwards("TakeDamage", dmg);
+        }
+        if (col.gameObject.tag == "Player")
+        {
+            Destroy(col.gameObject);
+            Destroy(gameObject);
         }
     }
 

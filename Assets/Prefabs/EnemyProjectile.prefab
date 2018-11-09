@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &60817036145536232
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -174,5 +174,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c86de1e56fe2ce4ba9c5cddf1fd29f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Projectile: {fileID: 0}
-  moveSpeed: 1
+  Projectile: {fileID: 50958830252919046}
+  moveSpeed: 3
