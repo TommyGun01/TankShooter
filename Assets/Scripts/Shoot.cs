@@ -6,13 +6,14 @@ public class Shoot : MonoBehaviour {
 
     public GameObject projectile;
     public Transform projectileSpawn;
+
     public float nextFire = 1.0f;
     public float currentTime = 0.0f;
 
 	// Use this for initialization
 	void Start ()
     {
-        projectileSpawn = this.gameObject.transform;
+        projectileSpawn = transform;
 	}
 	
 	// Update is called once per frame

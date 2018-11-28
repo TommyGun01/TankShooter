@@ -9,13 +9,6 @@ public class GameController : MonoBehaviour
     //Points
     public TMPro.TextMeshProUGUI pointsText;
     public int points = 0;
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {

@@ -35,6 +35,8 @@ public class EnemySpawner : MonoBehaviour
             spawnTimerMax--;
         if (time == 40f)
             spawnTimerMax--;
+        if (time == 50f)
+            spawnTimerMax--;
 
     }
 

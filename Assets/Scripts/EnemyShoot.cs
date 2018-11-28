@@ -4,20 +4,11 @@ using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour
 {
-
     public GameObject Projectile;
-
     public Transform projectileSpawn;
-
 
     public float nextFire = 1.0f;
     public float currentTime = 0.0f;
-    // Use this for initialization
-    void Start()
-    {
-        projectileSpawn = this.gameObject.transform;
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -35,7 +26,6 @@ public class EnemyShoot : MonoBehaviour
             Instantiate(Projectile, projectileSpawn.position, Quaternion.identity);
             nextFire -= currentTime;
             currentTime = 0.0f;
-
         }
     }
 }

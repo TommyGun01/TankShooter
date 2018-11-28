@@ -6,11 +6,11 @@ public class RotatingObjects : MonoBehaviour {
 
     public float tumble;
 
-    private Rigidbody rb;
+    private Rigidbody2D rb;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.angularVelocity = Random.insideUnitSphere * tumble;
+        rb = GetComponent<Rigidbody2D>();
+        rb.angularVelocity = Random.value * tumble;
     }
 }

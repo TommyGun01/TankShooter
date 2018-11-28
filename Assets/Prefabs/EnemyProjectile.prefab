@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114562859515543706}
   - component: {fileID: 50958830252919046}
   - component: {fileID: 60817036145536232}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EnemyProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,4 +175,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 50958830252919046}
-  moveSpeed: 3
+  moveSpeed: 4

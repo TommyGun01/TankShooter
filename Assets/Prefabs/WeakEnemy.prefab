@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50016529414184446}
   - component: {fileID: 61483360878917900}
   - component: {fileID: 114301678147574114}
+  - component: {fileID: 114663631668521020}
   m_Layer: 0
   m_Name: WeakEnemy
   m_TagString: Enemy
@@ -62,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &61483360878917900
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -101,10 +102,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 50016529414184446}
   moveSpeed: 1
-  changeDirections: 0
   enemyHP: 1
   enemydmg: 0
   playerScript: {fileID: 0}
+  gc: {fileID: 0}
+--- !u!114 &114663631668521020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092931637903918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad321b8ac9487243bd75e2a56538976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 1000
 --- !u!212 &212452460119451840
 SpriteRenderer:
   m_ObjectHideFlags: 1

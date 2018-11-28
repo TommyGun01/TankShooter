@@ -5,15 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public float moveSpeed = 10.0f;
+    public int playerHP;
 
     public Rigidbody2D player;
-    public int playerHP;
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    private void Awake()
     {
         player = this.GetComponent<Rigidbody2D>();
-	}
-	
+    }
 	// Update is called once per frame
 	void FixedUpdate ()
     {
@@ -37,7 +36,5 @@ public class Player : MonoBehaviour {
             Time.timeScale = 0;
             Destroy(gameObject);
         }
-
-
     }
 }

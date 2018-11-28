@@ -5,17 +5,15 @@ using UnityEngine;
 public class MoveProjectile : MonoBehaviour {
 
     public Rigidbody2D projectile;
+    public GameController gc;
 
     public float moveSpeed = 10.0f;
-
-    public GameController gc;
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    private void Awake()
     {
-        projectile = this.gameObject.GetComponent<Rigidbody2D>();
+        projectile = GetComponent<Rigidbody2D>();
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-	}
-	
+    }
 	// Update is called once per frame
 	void Update ()
     {
@@ -23,7 +21,6 @@ public class MoveProjectile : MonoBehaviour {
 	}
 
     //hit detection
-
      void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -47,6 +44,5 @@ public class MoveProjectile : MonoBehaviour {
         }
         */
         Destroy(gameObject);
-        
     }
 }

@@ -304,7 +304,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 12179401}
   moveSpeed: 1
-  changeDirections: 0
   enemyHP: 0
   enemydmg: 20
   playerScript: {fileID: 0}
@@ -582,7 +581,7 @@ Transform:
   - {fileID: 1919117441}
   - {fileID: 720625667}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &50472587 stripped
 Transform:
@@ -995,6 +994,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4282348977166718, guid: 71d7b935aef15f346b8d8b2d26313c5a, type: 2}
       propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50045060156772866, guid: 71d7b935aef15f346b8d8b2d26313c5a,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430720938830070, guid: 71d7b935aef15f346b8d8b2d26313c5a, type: 2}
+      propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11666,7 +11674,7 @@ Transform:
   - {fileID: 1929262072}
   - {fileID: 2053077952}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1378980096
 GameObject:
@@ -11933,7 +11941,7 @@ Transform:
   - {fileID: 1433086770}
   - {fileID: 1466251642}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1557237334
 Prefab:
@@ -12850,7 +12858,7 @@ RectTransform:
   - {fileID: 1378980097}
   - {fileID: 638499580}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13799,7 +13807,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 2089323440}
   moveSpeed: 1
-  changeDirections: 0
   enemyHP: 0
   enemydmg: 20
   playerScript: {fileID: 0}

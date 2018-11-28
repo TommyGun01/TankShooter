@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4144910902275932}
   - component: {fileID: 212961378347092524}
-  - component: {fileID: 114282326678581336}
   - component: {fileID: 50466841718726392}
   - component: {fileID: 61728289066016798}
+  - component: {fileID: 114822132326462478}
+  - component: {fileID: 114527543430001216}
   m_Layer: 0
   m_Name: StrongEnemy
   m_TagString: Enemy
@@ -62,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &61728289066016798
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -88,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.56}
   m_EdgeRadius: 0
---- !u!114 &114282326678581336
+--- !u!114 &114527543430001216
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,16 +97,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1628381138630508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43477adfb19b62a42aa75313d54dc195, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad321b8ac9487243bd75e2a56538976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 50466841718726392}
+  tumble: 1000
+--- !u!114 &114822132326462478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1628381138630508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03baccf182833504b9d6bd45efe2e5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
   moveSpeed: 0.5
-  changeDirections: 0
   enemyHP: 2
   enemydmg: 0
   playerScript: {fileID: 0}
-  hits: 0
+  gc: {fileID: 0}
 --- !u!212 &212961378347092524
 SpriteRenderer:
   m_ObjectHideFlags: 1
