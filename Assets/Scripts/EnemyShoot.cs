@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour
 {
+    //variabler
     public GameObject Projectile;
     public Transform projectileSpawn;
 
@@ -15,7 +16,8 @@ public class EnemyShoot : MonoBehaviour
     {
         EnemyShooting();
     }
-
+    //spawnar projectilen efter en visst antal sekunder som styrs av vad nextfire är. Efter första skottet väntar man i x antal sekunder innan nästa
+    //då x är nextfire värdet.
     public void EnemyShooting()
     {
         currentTime += Time.deltaTime;

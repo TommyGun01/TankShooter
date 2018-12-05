@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    //skapar variabler
     public GameObject[] enemyPrefabs = new GameObject[5];
     Vector3 spawnPos;
     public float maxSpawnposX, minSpawnPosX, maxSpawnPosY, minSpawnPosY;
@@ -17,7 +18,10 @@ public class EnemySpawner : MonoBehaviour
         spawnTimer = spawnTimerMax;
     }
 
-    // Update is called once per frame
+    // Spawnar en random prefab ifrån arrayn enemyprefabs.
+    //Spawnar på en random position mellan två x värden.
+    //Ökar spawnraten efter var 20,30,40 och 50 sekunder.
+
     void Update()
     {
         time += Time.deltaTime;

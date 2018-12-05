@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatingObjects : MonoBehaviour {
-
+public class RotatingObjects : MonoBehaviour
+{
+    //Gör så objektet  roterar sig. Simpelt
     public float tumble;
 
     private Rigidbody2D rb;
